@@ -1,0 +1,32 @@
+.vin{
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 40px #747474,
+             -20px -20px 40px #ffffff;
+    width: auto;
+    height: 530px;
+    margin: 100px 200px;
+    padding: 25px;
+    background-color: darkgray;
+}
+.col-auto{
+    padding:10px 40px ;
+    margin: 20px 450px;
+}
+@media(max-width:576px){
+    .vin{
+        border-radius: 20px;
+        background: #e0e0e0;
+        box-shadow:  20px 20px 40px #747474,
+                 -20px -20px 40px #ffffff;
+        width: auto;
+        height: 530px;
+        margin:150px 20px;
+        padding: 25px;
+        background-color: darkgray;
+    }
+    .col-auto{
+        padding:10px 40px ;
+        margin: 20px 100px;
+    }
+}
