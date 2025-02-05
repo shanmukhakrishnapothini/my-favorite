@@ -1,0 +1,170 @@
+nav>a>img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+nav{
+    /* width:auto; */
+    height: 70px;
+    background-color: rgb(38, 175, 175);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    /* z-index: 10; */
+    top: 0;
+}
+nav>ul{
+    display: flex;
+    list-style-type:none;
+}
+nav>ul>a{
+    /* padding:10/px; */
+    margin: 0px 5px;
+    font-size: 20px;
+}
+nav>input{
+    border: 0px;
+    padding:10px;
+    background-color: rgb(255, 106, 0);
+    color: black;
+    border-radius: 25px;
+    display: block;
+}
+video{
+    /* border: 5px solid black; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.on{
+    text-align: center;
+    position: absolute; 
+    color: rgb(5, 5, 5);
+    font-size: 25px;
+    left: 350px;
+    top: 300px;
+}
+.sec{
+    position: relative;
+    width: 100%;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.images>img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.one{
+    display: none;
+}
+body{
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input{
+    display: none;
+}
+@media(max-width:576px) {
+    nav>input{
+        display: none;
+    }
+    .about{
+    width: auto;
+    }
+    .on{
+        text-align: center;
+        position: absolute; 
+        color: rgb(5, 5, 5);
+        font-size: 25px;
+        left: 0px;
+        top: 50px;
+    }
+    
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    nav{
+        width: auto;
+        margin:none;
+        position: sticky;
+        top: 0;
+        background-color: aquamarine;
+    }
+    .sec{
+        /* position: relative; */
+        width: auto;
+    }
+    video{
+        /* border: 5px solid black; */
+        width:100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .images{
+        flex-wrap: wrap-reverse;
+        object-fit: cover;
+    }
+    .images>img{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    input{
+        width: 100%;
+        height: 70px;
+        border: none;
+        background-color: rgb(255, 106, 0);
+        color: black;
+        border-radius: 25px;
+        font-size: 20px;
+        display: block;
+    }
+    .one{
+        display: none;
+    }
+    .on{
+        font-size: 15px;
+        left: 70px;
+        top: 150px;
+    }
+    body{
+        margin: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+@media(max-width:376px){
+    body{
+        margin: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    nav>ul>a{
+        flex-wrap: wrap;
+        display: none;
+    }
+    .one{
+        text-align: center;
+        display: block;
+        /* position: sticky;
+        top: 0; */
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .one>ul>a{
+        list-style-type:none;
+        margin: 0px;
+    }
+    .on{
+        font-size: 10px;
+        left: 60px;
+        top: 150px;
+    }
+}
